@@ -14,7 +14,7 @@ pipeline {
                 echo "Building step from $NAME"
                 script {
                     def browsers =['chrome', 'fireforx']
-                    for (int i =0; i < browsers.size(), ++i){
+                    for (int i =0; i < browsers.size(); ++i){
                         echo "Testing the ${browsers[i]} brwser."
                     }
                 }
