@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    triggers {cron('* * * * *')}
+    //triggers {cron('* * * * *')}
     options { timeout (time : 5)}
     parameters{
         booleanParam( name: 'DEBUG_BUILD', defaultValue: true, description : 'Is it the debuing build?')
@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-            
+            }
         }
 
     }
